@@ -358,7 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* here the new css for skill */
 .skills-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #2f1a35, #191745);
   color: #fff;
   text-align: center;
 }
