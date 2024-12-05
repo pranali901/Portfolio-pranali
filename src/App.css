@@ -56,8 +56,13 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+  
 }
-
+.rounded-logo{
+  width: 92%;
+  height: auto;
+  border-radius: 50%;
+}
 button {
   border: 0;
   background-color: transparent;
@@ -298,6 +303,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+.wrap {
+  display: inline-block;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.wrap.hidden {
+  opacity: 0;
 }
 
 /************ Skills Css ************/
