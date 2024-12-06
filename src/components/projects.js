@@ -1,5 +1,6 @@
 import { Container, Row, Col, TabContainer, Tab } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects=()=>{
     const projects = [
@@ -9,22 +10,15 @@ export const Projects=()=>{
             imgUrl: "#",
         },
         {
-            title: "virtual Assistant",
+            title: "dental clinic",
             description: "design and developement",
             imgUrl: "#",
         },
         {
-            title: "virtual Assistant",
+            title: "railway reservation",
             description: "design and developement",
             imgUrl:  "#",
         },
-        {
-            title: "virtual Assistant",
-            description: "design and developement",
-            imgUrl: "#",
-        },
-      
-
 
     ];
     return (
@@ -50,47 +44,40 @@ export const Projects=()=>{
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                  <Row>
-                                    {
-                                        projects.map((project,index)=>{
-                                            return(
-                                                <p>{project.title}</p>
-                                            )
-                                        }
-                                    
-                                    )
-                                    }
-                                    </Row>  
+                                <Row>
+                                    <Col className="d-flex justify-content-center align-items-center">
+                                    <ProjectCard
+                                    title={projects[0].title} 
+                                    description={projects[0].description}
+                                    imgUrl={projects[0].imgUrl} /> 
+                                    </Col> 
+                                    </Row>
+  
 
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey="second">
-                                  <Row>
-                                    {
-                                        projects.map((project,index)=>{
-                                            return(
-                                                <p>{project.title}</p>
-                                            )
-                                        }
-                                    
-                                    )
-                                    }
-                                    </Row>  
+                                <Row>
+                                <Col className="d-flex justify-content-center align-items-center">
+                                <ProjectCard
+                                    title={projects[1].title} 
+                                    description={projects[1].description}
+                                    imgUrl={projects[1].imgUrl} /> 
+                                    </Col> 
+                                    </Row>
 
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey="third">
-                                  <Row>
-                                    {
-                                        projects.map((project,index)=>{
-                                            return(
-                                                <p>{project.title}</p>
-                                            )
-                                        }
-                                    
-                                    )
-                                    }
-                                    </Row>  
+                                <Row>
+                                <Col className="d-flex justify-content-center align-items-center">
+                                <ProjectCard
+                                    title={projects[2].title} 
+                                    description={projects[2].description}
+                                    imgUrl={projects[2].imgUrl} /> 
+                                    </Col> 
+                                    </Row>
+   
 
                                 </Tab.Pane>
                             </Tab.Content>
