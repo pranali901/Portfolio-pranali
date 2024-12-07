@@ -1,23 +1,26 @@
 import { Container, Row, Col, TabContainer, Tab } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import projimg1 from "../assets/img/project-img1.png";
+import projimg2 from "../assets/img/project-img2.jpg";
+import projimg3 from "../assets/img/project-img3.jpg";
 
 export const Projects=()=>{
     const projects = [
         {
-            title: "virtual Assistant",
-            description: "design and developement",
-            imgUrl: "#",
+            title: "Virtual Assistant in python",
+            description: "Using Python and MySQL",
+            imgUrl: projimg2,
         },
         {
-            title: "dental clinic",
-            description: "design and developement",
-            imgUrl: "#",
+            title: "Dental Clinic Website",
+            description: "Sponsored by Dr.Tushar Patil(BDMS) Using PHP, Bootstrap, js and MySQL",
+            imgUrl: projimg1 ,
         },
         {
-            title: "railway reservation",
-            description: "design and developement",
-            imgUrl:  "#",
+            title: "Railway Reservation",
+            description: "Small project with C#",
+            imgUrl:  projimg3,
         },
 
     ];
@@ -28,7 +31,7 @@ export const Projects=()=>{
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p> A third-year IT diploma student at Government Polytechnic Mumbai. With a strong foundation in programming and a knack for problem-solving, I’ve explored various technologies, including creating a virtual voice assistant</p>
+                        <p> A showcase of my web development projects highlighting my skills in designing, coding, and creating functional websites and applications.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" defaultActiveKey="/home">
                             <Nav.Item>
@@ -47,9 +50,9 @@ export const Projects=()=>{
                                 <Row>
                                     <Col className="d-flex justify-content-center align-items-center">
                                     <ProjectCard
-                                    title={projects[0].title} 
-                                    description={projects[0].description}
-                                    imgUrl={projects[0].imgUrl} /> 
+                                    title={projects[1].title} 
+                                    description={projects[1].description}
+                                    imgUrl={projects[1].imgUrl} /> 
                                     </Col> 
                                     </Row>
   
@@ -60,9 +63,9 @@ export const Projects=()=>{
                                 <Row>
                                 <Col className="d-flex justify-content-center align-items-center">
                                 <ProjectCard
-                                    title={projects[1].title} 
-                                    description={projects[1].description}
-                                    imgUrl={projects[1].imgUrl} /> 
+                                    title={projects[0].title} 
+                                    description={projects[0].description}
+                                    imgUrl={projects[0].imgUrl} /> 
                                     </Col> 
                                     </Row>
 
