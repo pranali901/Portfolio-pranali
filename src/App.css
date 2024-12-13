@@ -325,9 +325,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #a31eb5;
+  color: #fff;
 }
-
+ 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -365,7 +365,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   display: flex;
   justify-content: center;
-  background-color: black;
+  background: linear-gradient(90.21deg, #17070d -5.91%, #000000 111.58%);
   align-items: center;
   height:100%;
 }
@@ -380,6 +380,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin-top:7%;
 }
 .project p {
   color: #B8B8B8;
@@ -448,7 +449,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-top: 10%;
-  margin-bottom: 24px;
+  margin-bottom: 10%;
   justify-content: center;
   align-items: center;
   height:100%;
