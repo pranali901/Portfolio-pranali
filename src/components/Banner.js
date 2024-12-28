@@ -53,7 +53,7 @@ export const Banner = () => {
                                     <h1>{"Hi I'm Pranali Ausarmal. "}<span className="wrap"> {text} </span></h1>
                                     <p>A third-year IT diploma student at Government Polytechnic Mumbai. With a strong foundation in programming and a knack for problem-solving, I’ve explored various technologies, including creating a virtual voice assistant in Python. Dive into my portfolio to explore my projects, skills, and achievements. Let’s build the future together!</p>
                                     <button onClick={() => console.log('connect')}>
-                                        <a href="/PranaliAusarmalResume.pdf" download="PranaliAusarmalResume.pdf" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                        <a href="/Pranali_Ausarmal-cv.pdf" download="Pranali_Ausarmal-cv.pdf" style={{ color: 'inherit', textDecoration: 'none' }}>
                                             Resume <ArrowRightCircle size={25} />
                                         </a>
                                     </button>
